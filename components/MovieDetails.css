@@ -1,0 +1,105 @@
+/* MovieDetails.css */
+
+.movie-details {
+    padding: 20px;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px; /* Limit the overall width */
+    margin: auto; /* Center the container */
+    max-height: 100vh; /* Ensure it doesn't exceed viewport height */
+    overflow-y: auto; /* Add vertical scrollbar if content overflows */
+  }
+  
+  .movie-details img {
+    width: 300px; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .movie-details h1 {
+    font-size: 2em;
+    margin: 10px 0;
+  }
+  
+  .movie-details p {
+    font-size: 1em;
+    line-height: 1.6;
+    max-width: 800px; /* Limit the width for better readability */
+    text-align: center;
+  }
+
+ 
+  .movie-trailer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .movie-trailer iframe {
+    width: 100%;
+    max-width: 800px; /* Max width for the trailer video */
+    height: 450px; /* Height for the trailer video */
+    border: none;
+  }
+  
+  .movie-cast {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 200px;
+  }
+  
+  .cast-title {
+    font-size: 1.5em;
+    color: #ffffff; /* Ensure the title is visible on dark background */
+    margin: 20px 0;
+  }
+  .cast-member {
+    background-color: #1f1f1f; /* Slightly lighter background for cast cards */
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    max-width: 100%;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  }
+  
+  .cast-member img {
+    width: 100px; /* Width for cast profile pictures */
+    height: 150px; /* Height for cast profile pictures */
+    border-radius: 8px;
+    object-fit: cover; /* Ensure image covers the area without distortion */
+  }
+  
+  .cast-member p {
+    margin: 5px 0;
+    font-size: 0.9em;
+  }
+  
+  .cast-member p:first-of-type {
+    font-weight: bold;
+  }
+  
+
+  .movie-details::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent; /* Background color of scrollbar track */
+  }
+  
+  .movie-details::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3); /* Light transparent thumb */
+    border-radius: 4px;
+  }
+  
+  .movie-details::-webkit-scrollbar-track {
+    background: transparent; /* Transparent track background */
+  }

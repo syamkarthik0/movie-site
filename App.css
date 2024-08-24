@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White text color for contrast */
+  overflow:hidden;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+.drawer-open .main-content {
+  margin-left: 250px; /* Width of the drawer */
+  width: calc(100% - 250px); /* Adjust width when drawer is open */
+  transition: margin-left 0.3s; /* Smooth transition */
+}
+
+.main-content {
+  flex: 1;
+  transition: margin-left 0.3s; /* Smooth transition */
+  width: 100%; /* Full width by default */
+  padding: 20px; /* Add padding if needed */
+  overflow: hidden; /* Allow scrolling if content overflows */
+ 
+}
+
