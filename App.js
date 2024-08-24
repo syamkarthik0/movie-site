@@ -66,7 +66,7 @@
               <Route path="/genre/adventure" element={<MovieGridRedux genre="adventure"/>}/>
               <Route path="/genre/animation" element={<MovieGridRedux genre="animation"/>}/>
               <Route path="/genre/comedy" element={<MovieGridRedux genre="comedy"/>} />
-              <Route path="/genre/crime" eleme  nt={<MovieGridRedux genre="crime"/>} />
+              <Route path="/genre/crime" element={<MovieGridRedux genre="crime"/>} />
               <Route path="/genre/drama" element={<MovieGridRedux genre="drama"/>} />
               <Route path="/genre/horror" element={<MovieGridRedux genre="horror"/>} />
               <Route path="/genre/sci-fi" element={<MovieGridRedux genre="sci_fi"/>} />
