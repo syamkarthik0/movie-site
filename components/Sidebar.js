@@ -10,13 +10,19 @@
   import NewReleasesIcon from '@mui/icons-material/NewReleases';
   import StarIcon from '@mui/icons-material/Star';
   import MovieFilterIcon from '@mui/icons-material/MovieFilter';
-  import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
-  import ExploreIcon from '@mui/icons-material/Explore';
-  import SentimentVerySatisfiedIcon from '@mui/icons-material/SentimentVerySatisfied';
-  import TheaterComedyIcon from '@mui/icons-material/TheaterComedy';
-  import BugReportIcon from '@mui/icons-material/BugReport';
-  import ScienceIcon from '@mui/icons-material/Science';
   import FavoriteIcon from '@mui/icons-material/Favorite';
+  import MilitaryTechIcon from '@mui/icons-material/MilitaryTech';
+  import HistoryEduIcon from '@mui/icons-material/HistoryEdu';
+  import SportsMartialArtsIcon from '@mui/icons-material/SportsMartialArts'; // For Action
+  import OutdoorGrillIcon from '@mui/icons-material/OutdoorGrill'; // For Adventure
+  import MoodIcon from '@mui/icons-material/Mood'; // For Comedy
+  import LocalPoliceIcon from '@mui/icons-material/LocalPolice'; // For Crime
+  import EmojiObjectsIcon from '@mui/icons-material/EmojiObjects'; // For Horror
+  import RocketLaunchIcon from '@mui/icons-material/RocketLaunch'; // For Sci-Fi
+  import ReportProblemIcon from '@mui/icons-material/ReportProblem'; // For Thriller
+  import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome'; // For Fantasy
+  import PeopleIcon from '@mui/icons-material/People'; // For Family
+  import MusicNoteIcon from '@mui/icons-material/MusicNote'; // For Music
   import { createTheme, ThemeProvider } from '@mui/material/styles';
   import { useNavigate } from 'react-router-dom';
   import logo from './BlueBird.png'; // Adjust the path as needed
@@ -29,19 +35,19 @@
   ];
 
   const genres = [
-    { name: 'Action', icon: <EmojiEventsIcon />, path: '/genre/action' },
-    { name: 'Adventure', icon: <ExploreIcon />, path: '/genre/adventure' },
-    { name: 'Comedy', icon: <SentimentVerySatisfiedIcon />, path: '/genre/comedy' },
-    { name: 'Crime', icon: <BugReportIcon />, path: '/genre/crime' },
-    { name: 'Drama', icon: <TheaterComedyIcon />, path: '/genre/drama' },
-    { name: 'Horror', icon: <BugReportIcon />, path: '/genre/horror' },
-    { name: 'Sci-Fi', icon: <ScienceIcon />, path: '/genre/sci-fi' },
-    { name: 'Thriller', icon: <EmojiEventsIcon />, path: '/genre/thriller' },
-    { name: 'War', icon: <FavoriteIcon />, path: '/genre/war' },
-    { name: 'History', icon: <FavoriteIcon />, path: '/genre/history' },
-    { name: 'Fantasy', icon: <ExploreIcon />, path: '/genre/fantasy' },
-    { name: 'Family', icon: <SentimentVerySatisfiedIcon />, path: '/genre/family' },
-    { name: 'Music', icon: <EmojiEventsIcon />, path: '/genre/music' },
+    { name: 'Action', icon: <SportsMartialArtsIcon />, path: '/genre/action' },
+    { name: 'Adventure', icon: <OutdoorGrillIcon />, path: '/genre/adventure' },
+    { name: 'Comedy', icon: <MoodIcon />, path: '/genre/comedy' },
+    { name: 'Crime', icon: <LocalPoliceIcon />, path: '/genre/crime' },
+    { name: 'Drama', icon: <MovieFilterIcon />, path: '/genre/drama' },
+    { name: 'Horror', icon: <EmojiObjectsIcon />, path: '/genre/horror' },
+    { name: 'Sci-Fi', icon: <RocketLaunchIcon />, path: '/genre/sci-fi' },
+    { name: 'Thriller', icon: <ReportProblemIcon />, path: '/genre/thriller' },
+    { name: 'War', icon: <MilitaryTechIcon />, path: '/genre/war' },
+    { name: 'History', icon: <HistoryEduIcon />, path: '/genre/history' },
+    { name: 'Fantasy', icon: <AutoAwesomeIcon />, path: '/genre/fantasy' },
+    { name: 'Family', icon: <PeopleIcon />, path: '/genre/family' },
+    { name: 'Music', icon: <MusicNoteIcon />, path: '/genre/music' },
     { name: 'Romance', icon: <FavoriteIcon />, path: '/genre/romance' },
   ];
   
